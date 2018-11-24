@@ -89,7 +89,7 @@ int main( int argc, char** argv ) {
             while ( currentLineSplit[1] == "CHIL" ) {
                 it = tree.find(currentLineSplit[2]);
                 if ( husband != "" && wife != "" && it != tree.end()){
-                    outputFile << "parents('" << tree[currentLineSplit[2]] <<"','" << husband<<"','"<< wife<<"')."<<endl;
+                    outputFile << "parents(\"" << tree[currentLineSplit[2]] <<"\",\"" << husband<<"\",\""<< wife<<"\")."<<endl;
                 }
                 getline(inputFile ,currentLine);
                 spiltStringBySpace(&currentLine, &currentLineSplit);
